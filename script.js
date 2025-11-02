@@ -153,9 +153,11 @@ function contarClick() {// creo una funcion que se ejecuta cada vez que el usuar
 
 // EJERCICIO 4: REDIRECCION AUTOMATICA A OTRA PAGINA(W3SCHOOLS) CON SETTIMEOUT
 
-function redirigir() { // creo la funcion que se ejecuta al cargar la pagina.
+function redirigir() { // creo la funcion redirigir que se ejecuta al cargar la pagina.
   // uso setTimeout para esperar 3 segundos antes de redirigir a la nueva pagina en m icaso  la web de w3schools.
   setTimeout(() => {
     window.location.href = "https://www.w3schools.com/js/default.asp";// con window.location.href cambio la pagina actual por la nueva.
   }, 3000);
 }
+// uso el evento DOMContentLoaded  para que la funcion se ejcute justo cuando ha terminado de cargar la pagina en mi caso 3 segundos.
+document.addEventListener('DOMContentLoaded', redirigir);
