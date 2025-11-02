@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Ejercicio 2.</h2>
+    <h3>Algoritmo de compresion y descompresion de cadenas</h3>
+    <h4>Comprimir cadena</h4>
+    <input type="text" id="entradaComprimir" placeholder="Escribe una cadena, ej: hola mundoooo">
+    <br>
+    <button class="buttonconfirm" onclick="codificar()">COMPRIMIR</button>
+    <br>
+    <p>Resultado:</p>
+    <input type="text" id="salidaComprimir" readonly>
+    <button onclick="copiarResultado()">COPIAR AL DESCOMPRESOR</button>
+    <br><br>
+
+    <h4>Descomprimir cadena</h4>
+    <input type="text" id="entradaDescomprimir" placeholder="Escribe una cadena comprimida, ej: hol4a?mundo">
+    <br>
+    <button class="buttondecodificar" onclick="decodificar()">DESCOMPRIMIR</button>
+    <br>
+    <p>Resultado:</p>
+    <input type="text" id="salidaDescomprimir" readonly>
+    <br><br>
+    <button onclick="location.href='index.html'">VOLVER AL INDICE</button>
+</body>
+</html>
